@@ -1,0 +1,1 @@
+let git = fetch('https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}').then(response => response.json()).then(response => console.log(response))

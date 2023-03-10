@@ -1,0 +1,3 @@
+"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"
+
+https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}
