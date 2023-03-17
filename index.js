@@ -1,9 +1,6 @@
 async function gitSearch(){
     event.preventDefault()
     let repo_name = document.getElementById('git_name')
-    
-    event.preventDefault()
-    let repo_name = document.getElementById('git_name')
     if(repo_name.value.length > 3){
         let git = await fetch(`https://api.github.com/search/repositories?q={${repo_name.value}}{&page,per_page,sort,order}`)
         let commits = await git.json()
